@@ -1,0 +1,67 @@
+:root {
+  --bg: #0f0f13;
+  --panel: #1a1a24;
+  --border: #2e2e3e;
+  --accent: #7c5cff;
+  --accent-hover: #9b82ff;
+  --text: #e8e8f0;
+  --muted: #9a9ab0;
+  --danger: #ff5c7a;
+  --success: #3dd68c;
+}
+
+body {
+  color: var(--text);
+  background: var(--bg);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  background: var(--accent);
+  color: white;
+  transition: background 0.15s;
+}
+
+button:hover {
+  background: var(--accent-hover);
+}
+
+button.secondary {
+  background: #2a2a3a;
+}
+
+button.secondary:hover {
+  background: #3a3a4a;
+}
+
+button.danger {
+  background: var(--danger);
+}
+
+input, select {
+  background: #12121a;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-size: 13px;
+}
+
+.panel {
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+}
+
+.section-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
